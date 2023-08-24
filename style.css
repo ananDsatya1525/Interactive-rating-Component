@@ -1,0 +1,191 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: hsl(216, 12%, 8%);
+}
+.attribution { font-size: 11px; text-align: center;position: fixed;bottom: 10px;
+width: 100%;
+color: #fff; 
+font-size: 18px;
+font-family: 'Overpass',sans-serif;}
+.attribution a { color: hsl(228, 45%, 44%);
+color: tomato; }
+
+.attribution a:hover{
+  color: green;
+}
+.rating_container{
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 350px;
+  padding: 30px;
+  background-color:  hsl(213, 19%, 18%);
+}
+.star_div{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+ background-color: hsla(216, 12%, 54%, 0.128) ;
+}
+.Question{
+  padding-top: 10px;
+  line-height: 25px;
+  color: hsl(217, 12%, 63%);
+}
+.Question > h2{
+  font-family: 'Overpass',sans-serif;
+  color: #ffff;
+}
+.Question >p {
+  font-family: 'Overpass',sans-serif;
+  font-weight:600;
+}
+.rating_range{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.same{
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius:50% ;
+font-family: 'Overpass',sans-serif;
+font-weight: 700;
+background-color:  hsla(216, 12%, 54%, 0.322);
+color: #fff;
+cursor: pointer;
+}
+.same:hover{
+  background-color: hsl(216, 12%, 54%);
+}
+.submit_div{
+  width: 100%;
+}
+.submit_div > button{
+  font-family: 'Overpass',sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px;
+  width: 100%;
+  margin-top: 50px;
+  letter-spacing: 2px;
+  font-size: 18px;
+   border-top-left-radius:30px ;
+   border-bottom-left-radius:30px;
+   border-top-right-radius:30px ;
+   border-bottom-right-radius:30px;
+   outline: none;
+   border: none;
+   background-color: tomato;
+   color: #fff;
+   cursor: pointer;
+}
+.submit_div > button:hover{
+  background-color: #ffff;
+  color: tomato;
+}
+.Thank_you{
+  display: none;
+  flex-direction: column;
+  width: 350px;
+  padding: 30px;
+  background-color:  hsl(213, 19%, 18%);
+  border-radius: 30px;
+}
+.Thank_you >.svgs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .svgs > p{
+  padding: 6px 20px 6px 20px;
+  font-family: 'Overpass',sans-serif;
+  color: tomato;
+  font-weight: 600;
+  background-color:hsla(216, 12%, 54%, 0.078);
+  border-top-left-radius:30px ;
+  border-bottom-left-radius:30px;
+  border-top-right-radius:30px ;
+  border-bottom-right-radius:30px;
+
+ }
+ .Text{
+  text-align: center;
+  font-family: 'Overpass',sans-serif;
+ }
+ .Text > h2{
+  color: #ffff;
+ }
+ .Text > p{
+  color: hsl(217, 12%, 63%);
+ }
+ @media screen and (max-width: 412px) {
+  .Thank_you{
+  max-width: 250px;
+  padding: 30px;
+  }
+  .rating_container{
+    max-width: 250px;
+  padding: 30px;
+  }
+ }
+ @media only screen and (min-width:760px) {
+  body{
+    display: flex;
+   justify-content:flex-start;
+   height: 100vh;
+
+  }
+  .Thank_you{
+  max-width: 300px;
+  padding: 30px;
+  position: absolute;
+  top: 100px;
+
+  }
+  .rating_container{
+  max-width: 300px;
+  padding: 30px;
+  position: absolute;
+  top: 100px;
+  }
+ }
+
+ @media only screen and (min-width:280px) {
+  body{
+    display: flex;
+   justify-content:flex-start;
+   height: 100vh;
+
+  }
+  .Thank_you{
+  max-width: 80%;
+  padding: 30px;
+  position: absolute;
+  top: 100px;
+
+  }
+  .rating_container{
+  max-width: 80%;
+  position: absolute;
+  top: 100px;
+  }
+ }
+ @media only screen and (width:280px) {
+  .attribution{
+    font-size: 10px;
+  }
+ }
